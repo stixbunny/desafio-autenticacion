@@ -1,11 +1,13 @@
-# Actividad Presencial Autenticacíon Desde 0
-## Autenticación con Devise 
+# Actividad Autenticacíon Desde 0
 
-El objetivo de esta actividad es la implementación de un Sistema de autenticación manual para permitir el logeo de un usuario en una aplicación.
+[Link al repositorio](https://github.com/DesafioLatam/Taller_Autenticac-on_Manual_G11)
+
+El objetivo de esta actividad es la implementación de un Sistema de autenticación manual para permitir el logeo de un usuario en una aplicación. 
+Se entrega ya una aplicación casi terminada, Forkea y clonala desde github en tu computador.(Link Arriba).
 
 ## Setup:
 
-En esta actividad se utilizó la gema carrierwave para el manejo de archivos por lo que antes de empezar tendrás que instalar imagemagik en tu computador. Si ya lo has instalado antes, omite este paso.
+La aplicación tiene algunas gemas ya incorporadas,  por lo que antes de empezar tendrás que instalar imagemagik en tu computador. Si ya lo has instalado antes, omite este paso.
 
 Para saber si ya está instalado vamos a escribir:
 
@@ -31,7 +33,22 @@ sudo apt-get update
 sudo apt-get install imagemagick
 ~~~
 
-Más información en <a href="https://github.com/carrierwaveuploader/carrierwave/tree/v1.1.0">Documentación carrierwave</a>
+
+-----------
+
+Cuando ya  tengas instalado imageMagik, continua abriendo tu proyecto. Deberas ejecutar los siguientes pasos en la consola, para que se pueda abrir.
+
+~~~
+bundle install
+~~~
+
+y luego corre una migración: 
+
+~~~
+Rails db:migrate
+~~~
+
+
 
 ## Comienza la actividad
 
@@ -93,3 +110,5 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
 	> Utilizar current_user para guardar el dato en la base de datos en el método create.
 
 - Crear vista con las historias que le pertenecen al usuario.
+
+- Sube tu proyecto a Github y no olvides compartir el enlace.

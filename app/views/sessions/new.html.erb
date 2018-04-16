@@ -1,0 +1,13 @@
+<h1>Ingreso de usuario</h1>
+
+<p><%= notice %></p>
+
+<%= form_with(model: @user, local: true, url: sessions_path) do |form| %>
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+  <br>
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  <br>
+  <%= form.submit 'Enviar' %>
+<% end %>

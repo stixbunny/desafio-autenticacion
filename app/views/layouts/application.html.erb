@@ -33,6 +33,18 @@
           <p><%= alert %></p>
         </div>
       <% end %>
+      <% if logged? %>
+        <h5>Hola <%= current_user.name %></h5>
+      <%= link_to "Salir", session_path(current_user), method: :delete %>
+      <% else%>
+        <%= link_to 'Iniciar Sesion', users_sign_in_path %>
+        <%= link_to 'Registrarse', users_sign_up_path %>
+      <% end %>
+
+      <div class="container">
+        <%= notice %>
+        <%= alert %>
+      </div>
       <%= yield %>
     </div>
   </body>
